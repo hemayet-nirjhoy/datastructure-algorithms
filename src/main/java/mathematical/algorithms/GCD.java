@@ -14,6 +14,7 @@ public class GCD {
 
     // Recursive version of GCD calculation
     public static int gcdRec(int a, int b) {
+        if (a % b == 0) return b;
         return a % b == 0 ? b : gcdRec(b, a % b);
     }
 }
